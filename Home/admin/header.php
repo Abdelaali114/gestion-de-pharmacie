@@ -16,7 +16,7 @@
             <img src="assets/LogoINPT.PNG" alt="" class="logo">
             <ul>
                 <li class="cadre">
-                    <a  href="http://localhost/tuts/pharmaceutique/Home/index.php">HOME</a><br>
+                    <a  href="http://localhost/tuts/pharmaceutique/index.php">HOME</a><br>
                 </li>
                 <li class="dropdown">
                    <select id="mySelect" onchange="redirectToSelected()">
