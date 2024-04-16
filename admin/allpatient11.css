@@ -1,0 +1,42 @@
+body {
+   background-image: url('assets/patient.jpg'); /* Replace 'your-image-url.jpg' with the URL or relative path to your image */
+   background-size: cover; /* Cover the entire background */
+   background-position: center; /* Center the background image */
+   background-repeat: no-repeat; /* Do not repeat the background image */
+   
+}
+.title{
+    margin-left: 32%;
+    font-size: 35px;
+    padding: 25px;
+    font-style: oblique;
+}
+.title span {
+    color: rgb(36, 163, 36);
+}
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-left: 10%;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.9); /* Couleur de fond avec une opacité de 90% */
+    opacity: 1;
+}
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+    
+}
+.styled-table th,
+.styled-table td {
+    padding: 15px 20px;
+    font-size: 15px;
+}

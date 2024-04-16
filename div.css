@@ -1,0 +1,40 @@
+.opinions-container {
+    display: flex;
+    overflow-x: hidden; /* Cache la barre de défilement horizontale */
+    white-space: nowrap; /* Assure que les éléments restent sur la même ligne */
+}
+
+.opinion {
+    background-color: #f0f0f0;
+    padding: 50px;
+    margin-right: 10px; /* Ajoute de l'espace entre les opinions */
+    display: inline-block; /* Permet d'appliquer des styles spécifiques à chaque opinion */
+}
+
+.opinion-text {
+    font-size: 1em;
+
+}
+.opinion-text .image1{
+    width: 450px;
+}
+.opinion-text .image2{
+    width: 450px;
+}
+.opinion-text .image3{
+    width: 450px;
+}
+
+.opinion-text.centered {
+    font-size: 1.5em; /* Taille de police plus grande pour l'opinion centrée */
+    animation: scrollEffect 3s infinite alternate; /* Ajoute l'animation de défilement */
+}
+
+@keyframes scrollEffect {
+    from {
+        font-size: 1.2em; /* Taille de départ */
+    }
+    to {
+        font-size: 1.8em; /* Taille d'arrivée */
+    }
+}

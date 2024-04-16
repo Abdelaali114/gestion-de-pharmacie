@@ -1,0 +1,222 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+}
+.page-bakcground{
+    
+    background-color: rgb(0, 100, 0);
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+.page-bakcground .active {
+    padding: 7px;
+    border-radius: 5px;
+}
+.active, .page-bakcground ul li :hover
+{
+    background-color: #2bab0d;
+    border-radius: 5px;
+    padding: 7px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    padding: 1% 1% 1% 1%;
+}
+img.menu-img{
+  width: 25px;
+  margin-right: 1%;
+  cursor: pointer;
+}
+img.logo{
+    width: 120px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+ul{
+    flex: 1;
+    text-align: right;
+
+}
+li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 2% 0 2%;
+
+}
+li a{
+    text-decoration: none;
+    color: #fff;
+
+}
+#btn{
+    background-color: #efefef;
+    height: 30px;
+    width: 60px;
+    border-radius: 30px;
+    border: 0,0,0,0;
+    outline: 0;
+    cursor: pointer;
+    transition: background color 0.5s;
+
+}
+#btn span{
+    display: block;
+    background-color: black;
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    margin-left: 2px,s;
+    transition: background color 0,5s;
+    opacity: 0.5;
+}
+.lamp-container{
+    position: absolute;
+    Top: -99px;
+    left: 22%;
+    width: 200px;
+}
+.Lamp{
+    width: 100%;
+}.Light{
+    position: absolute;
+    top: 97%;
+    left: 50%;
+    transform:translateX(-50%);
+    width: 700px;
+    margin-left: -10px;
+    opacity: 0;
+    transition: opacity 0.5;
+
+}
+.text-container{
+    max-width: 40%;
+    margin-top: 7%;
+    margin-left: 60%;
+    color: #fff;
+
+}
+.text-container h1{
+   font-size: 55px;
+   font-weight: 400;
+   color: #fff;
+
+}
+.text-container p{
+    line-height: 20px;
+    color: #fff;
+
+}
+.text-container a{
+    text-decoration: none;
+    background-color: #00986f;
+    padding: 14px 40px;
+    display: inline-block;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 30px;
+    border-radius: 30px;
+
+}
+.control{
+    display: flex;
+    align-items: center;
+    margin-top: 28.4vh;
+    color: #fff;
+
+}
+.control .Line {
+    width: 250px;
+    height: 4px;
+    background: #fff;
+    margin: 0 20 px;
+    border-radius: 2px;
+    color: #fff;
+
+
+}
+.control .Line span {
+    width: 50%;
+    height: 8px;
+    margin-top: -2px;
+    border-radius: 4px;
+    background-color: #e18f1d;
+    display: block;
+    color: #fff;
+}
+.active{
+    background-color: green;
+    }
+    .active span{
+    background-color: #fff;
+    margin-left: 31px;
+    }
+    .on{
+    opacity: 1;}
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        
+      }
+      
+      .dropdown select {
+        background-color: rgb(0, 100, 0);
+        color: white;
+        padding: 12px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        
+      }
+      
+      .dropdown select:hover {
+        background-color: #45a049;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        border-radius: 5px;
+        z-index: 1;
+        min-width: 120px;
+      }
+      
+      .dropdown-content option {
+        padding: 12px 16px;
+      }
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      
+      .dropdown-content a {
+        color: #333333;
+        padding: 12px 16px;
+        display: block;
+        text-decoration: none;
+        transition: background-color 0.3s;
+      }
+      
+      .dropdown-content a:hover {
+        background-color: #e0e0e0;
+      }
+    .cadre{
+        border:1px solid white;
+        padding:8px;
+        border-radius: 5px;
+    }
+
+
+    
+

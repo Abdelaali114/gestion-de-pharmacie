@@ -1,0 +1,469 @@
+/*  import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+/* all similar content styling codes */
+
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+.about, .services, .skills, .teams, .contact, footer{
+    font-family: 'Poppins', sans-serif;
+}
+.about .about-content,
+.services .serv-content,
+.skills .skills-content,
+.contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+section .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+section .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+section .title::after{
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    font-size: 20px;
+    color: rgb(0, 100, 0);
+    padding: 0 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+
+/* navbar styling */
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+}
+.navbar.sticky{
+    padding: 15px 0;
+    background: rgb(0, 100, 0);
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+.navbar .logo a span{
+    color: rgb(0, 100, 0);
+    transition: all 0.3s ease;
+}
+.navbar.sticky .logo a span{
+    color: #fff;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+    color: rgb(0, 100, 0);
+}
+.navbar.sticky .menu li a:hover{
+    color: #fff;
+}
+
+/* menu btn styling */
+.menu-btn{
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+.scroll-up-btn{
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: rgb(0, 100, 0);
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    border-bottom-width: 2px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.scroll-up-btn.show{
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
+.scroll-up-btn:hover{
+    filter: brightness(90%);
+}
+
+
+
+
+
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid rgb(0, 100, 0)!important;
+    transition: all 0.3s ease;
+}
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover{
+    background: rgb(0, 100, 0)!important;
+}
+
+/* contact section styling */
+.contact .title::after{
+    content: "get in touch";
+}
+.contact .contact-content .column{
+    width: calc(50% - 30px);
+}
+.contact .contact-content .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.contact .contact-content .left p{
+    text-align: justify;
+}
+.contact .contact-content .left .icons{
+    margin: 10px 0;
+}
+.contact .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+.contact .contact-content .row .info{
+    margin-left: 30px;
+}
+.contact .contact-content .row i{
+    font-size: 25px;
+    color: rgb(0, 100, 0);
+}
+.contact .contact-content .info .head{
+    font-weight: 500;
+}
+.contact .contact-content .info .sub-title{
+    color: #333;
+}
+.contact .right form .fields{
+    display: flex;
+}
+.contact .right form .field,
+.contact .right form .fields .field{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.contact .right form .textarea{
+    height: 80px;
+    width: 100%;
+}
+.contact .right form .name{
+    margin-right: 10px;
+}
+.contact .right form .field input,
+.contact .right form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+.contact .right form .field input:focus,
+.contact .right form .textarea textarea:focus{
+    border-color: #b3b3b3;
+}
+.contact .right form .textarea textarea{
+  padding-top: 10px;
+  resize: none;
+}
+.contact .right form .button-area{
+  display: flex;
+  align-items: center;
+}
+.right form .button-area button{
+  color: #fff;
+  display: block;
+  width: 160px!important;
+  height: 45px;
+  outline: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  flex-wrap: nowrap;
+  background:rgb(0, 100, 0);
+  border: 2px solid rgb(0, 100, 0);
+  transition: all 0.3s ease;
+}
+.right form .button-area button:hover{
+  color: rgb(0, 100, 0);
+  background: none;
+}
+
+.Home {
+    background-color: #f0f0f0; /* Background color for the section */
+    padding: 50px; /* Padding around the content */
+    text-align: center; /* Center-align the content */
+}
+
+.Home h1 {
+    font-size: 36px; /* Font size for the heading */
+    color: #333; /* Text color */
+    text-align: justify;
+}
+
+.Home h1 span {
+    color:  rgb(0, 100, 0); /* Color for the word "Pharmacy" */
+}
+.Home p {
+    font-family: Arial, sans-serif; /* Choose a clean, easy-to-read font */
+    font-size: 16px; /* Adjust font size as needed */
+    line-height: 1.6; /* Increase line height for better readability */
+    text-align: justify; /* Justify the text for a clean appearance */
+    margin: 20px auto; /* Add margin for breathing room and center the paragraph horizontally */
+    max-width: 800px; /* Limit the width of the paragraph for better readability */
+    padding: 10px; /* Add padding for breathing room */
+    border-radius: 5px; /* Add border radius for rounded corners */
+}
+.Home .un {
+    font-size: 36px; /* Font size for the heading */
+    color: #333; /* Text color */
+    text-align: justify;
+    margin-left: 40px;
+    
+}
+.Home .paragraph-container p {
+    margin-right: 50%;
+    margin-top: 50px;
+}
+.Home .paragraph-container img {
+   margin-left: 60%;
+   margin-top: -50%;
+}
+.Home .deux {
+    font-size: 36px; /* Font size for the heading */
+    color: #333; /* Text color */
+    text-align: justify;
+    margin-left: 20%;
+    
+}
+.Home .paragraph_deux p {
+    margin-right: -2%;
+    
+}
+.Home .paragraph_deux img {
+    margin-left: -60%;
+    margin-top: -50%;
+    width: 570px;
+    height: 266px;
+
+}
+.Home .ta9h11{
+    margin-left: 35px;
+    margin-bottom: -60px;
+    color: rgb(0, 100, 0);
+}
+.Home .ta9p1{
+    color: rgb(0, 100, 0);
+     
+}
+.Home .ta9h12{
+    margin-top: -8%;
+    margin-left: 41%;
+    margin-bottom: -60px;
+    color: rgb(0, 100, 0);
+}
+.Home .ta9p2{
+    color: rgb(0, 100, 0);
+    margin-left: 40%;
+    
+}
+.Home .ta9h13{
+    margin-top: -8%;
+    margin-left: 82%;
+    margin-bottom: -60px;
+    color: rgb(0, 100, 0);
+}
+.Home .ta9p3{
+    color: rgb(0, 100, 0);
+    margin-left: 80%;
+    
+}
+.Home .trois {
+    font-size: 36px; /* Font size for the heading */
+    color: #333; /* Text color */
+    text-align: justify;
+    margin-right: 50%;
+    
+}
+.Home .paragraph_trois p {
+    margin-left: -3%;
+    text-align: left;
+    
+}
+.Home .paragraph_trois img {
+    margin-right: -60%;
+    margin-top: -50%;
+    width: 570px;
+    height: 266px;
+
+}
+.Home .quatre {
+    font-size: 36px; /* Font size for the heading */
+    color: #333; /* Text color */
+    text-align: justify;
+    margin-left: 8%;
+    
+}
+.Home .paragraph_quatre p {
+    
+    text-align: center;
+    
+}
+.Home .paragraph_quatre img {
+    
+    width:92%;
+    height: 80%;
+
+}
+.comentaire {
+    background-color: #f0f0f0; /* Background color for the section */
+    padding: 50px; /* Padding around the content */
+    text-align: center; /* Center-align the content */
+}
+.comentaire span {
+    color:  rgb(0, 100, 0); /* Color for the word "Pharmacy" */
+}
+.comentaire .cinq {
+    font-size: 28px; /* Font size for the heading */
+    color: #333; /* Text color */
+    text-align: justify;
+    margin-left: 22%;
+    
+}
+.comentaire p {
+    font-family: Arial, sans-serif; /* Choose a clean, easy-to-read font */
+    font-size: 16px; /* Adjust font size as needed */
+    line-height: 1.6; /* Increase line height for better readability */
+    text-align: center; /* Justify the text for a clean appearance */
+    margin: 19px auto; /* Add margin for breathing room and center the paragraph horizontally */
+    max-width: 800px; /* Limit the width of the paragraph for better readability */
+    padding: 10px; /* Add padding for breathing room */
+    border-radius: 5px; /* Add border radius for rounded corners */
+}
+.Home .ziro h1 {
+    margin-left: 37%;
+    font-size: 65px;
+    font-style: italic;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 45px; /* Espace entre les cellules */
+    margin-top: -80px;
+    margin-left: 42px;
+    
+}
+th, td {
+    padding: 65px; /* Espace à l'intérieur des cellules */
+    border: 1px solid rgb(5, 107, 11); /* Bordures */
+    border-radius: 7px;
+    font-size: 25px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    
+}
+th:nth-child(even),
+    td:nth-child(even) {
+        background-color: rgb(105, 231, 121); /* Change this to the desired color */
+    }
+    th:nth-child(odd),
+    td:nth-child(odd) {
+        background-color: rgb(105, 231, 121); /* Change this to the desired color */
+    }
+table a {
+     color: #0f0d0d;
+}
+.Home1 {
+    background-image: url('assets/patient.jpg'); /* Replace 'your-image-url.jpg' with the URL or relative path to your image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+     /* Padding around the content */
+    text-align: center; /* Center-align the content */
+    margin-left: -50px;
+    margin-right: -50px;
+    margin-top: -50px;
+    margin-bottom: -100px;
+}
+th img {
+    padding: -20px;
+    border-radius: 5px;
+    height: 150px;
+    width: 150px;
+}
+}
+
+
+
